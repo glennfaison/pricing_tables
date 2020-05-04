@@ -10,6 +10,9 @@
     </p>
   </div>
 
+  <h1 style="color: white; text-align: center; text-transform: uppercase;">
+    {{product.name}}
+  </h1>
   <ul class="cd-pricing-list cd-bounce-invert">
     <li class="cd-popular" *ngFor="let pricingPlan of pricingPlans">
       <app-pricing-plan [pricingPlan]="pricingPlan">
