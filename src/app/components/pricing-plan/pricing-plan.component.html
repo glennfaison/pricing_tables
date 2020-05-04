@@ -3,17 +3,22 @@
   <li data-type="monthly" class="is-visible is-ended">
 
     <header class="cd-pricing-header">
-      <h2>Premier</h2>
+      <h2>{{pricingPlan.monthly.id}}</h2>
       <div class="cd-price">
-        <span class="cd-currency">$</span>
-        <span class="cd-value">90</span>
-        <span class="cd-duration">mo</span>
+        <span class="cd-currency">{{pricingPlan.monthly.currency}}</span>
+        <span class="cd-value">{{pricingPlan.monthly.value}}</span>
+        <span class="cd-duration">{{pricingPlan.monthly.duration}}</span>
       </div>
     </header>
 
     <div class="cd-pricing-body">
       <ul class="cd-pricing-features">
-        <li *ngFor="let entry of monthly"><em>{{entry[1]}}</em> {{entry[0]}}</li>
+        <li><em>{{pricingPlan.monthly.Memory}}</em> Memory</li>
+        <li><em>{{pricingPlan.monthly.Users}}</em> Users</li>
+        <li><em>{{pricingPlan.monthly.Websites}}</em> Websites</li>
+        <li><em>{{pricingPlan.monthly.Domains}}</em> Domains</li>
+        <li><em>{{pricingPlan.monthly.Bandwidth}}</em> Bandwidth</li>
+        <li><em>{{pricingPlan.monthly.Support}}</em> Support</li>
       </ul>
     </div>
 
@@ -26,17 +31,22 @@
   <li data-type="yearly" class="is-hidden is-ended">
 
     <header class="cd-pricing-header">
-      <h2>Premier</h2>
+      <h2>{{pricingPlan.yearly.id}}</h2>
       <div class="cd-price">
-        <span class="cd-currency">$</span>
-        <span class="cd-value">950</span>
-        <span class="cd-duration">yr</span>
+        <span class="cd-currency">{{pricingPlan.yearly.currency}}</span>
+        <span class="cd-value">{{pricingPlan.yearly.value}}</span>
+        <span class="cd-duration">{{pricingPlan.yearly.duration}}</span>
       </div>
     </header>
 
     <div class="cd-pricing-body">
       <ul class="cd-pricing-features">
-        <li *ngFor="let entry of yearly"><em>{{entry[1]}}</em> {{entry[0]}}</li>
+        <li><em>{{pricingPlan.yearly.Memory}}</em> Memory</li>
+        <li><em>{{pricingPlan.yearly.Users}}</em> Users</li>
+        <li><em>{{pricingPlan.yearly.Websites}}</em> Websites</li>
+        <li><em>{{pricingPlan.yearly.Domains}}</em> Domains</li>
+        <li><em>{{pricingPlan.yearly.Bandwidth}}</em> Bandwidth</li>
+        <li><em>{{pricingPlan.yearly.Support}}</em> Support</li>
       </ul>
     </div>
 
