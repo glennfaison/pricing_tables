@@ -9,9 +9,15 @@ export class PricingPlanComponent implements OnInit {
 
   @Input() pricingPlan: any;
 
+  isSelected = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleIsSelected() {
+    this.isSelected = !this.isSelected;
   }
 
 }

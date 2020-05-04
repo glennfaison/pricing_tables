@@ -1,4 +1,6 @@
-<ul class="cd-pricing-wrapper">
+<ul class="cd-pricing-wrapper"
+  [ngClass]="{'cd-popular': isSelected }"
+  (click)="toggleIsSelected()">
 
   <li data-type="monthly" class="is-visible is-ended">
 
