@@ -2,23 +2,18 @@
 
   <div class="cd-pricing-switcher">
     <p class="fieldset">
-      <input type="radio" name="duration-2" value="monthly" id="monthly-2" checked="">
-      <label for="monthly-2">Monthly</label>
-      <input type="radio" name="duration-2" value="yearly" id="yearly-2">
-      <label for="yearly-2">Yearly</label>
+      <input type="radio" name="duration-2" value="monthly" [id]="'monthly-' + product.id" checked="">
+      <label [for]="'monthly-' + product.id">Monthly</label>
+      <input type="radio" name="duration-2" value="yearly" [id]="'yearly-' + product.id">
+      <label [for]="'yearly-' + product.id">Yearly</label>
       <span class="cd-switch"></span>
     </p>
   </div>
 
   <ul class="cd-pricing-list cd-bounce-invert">
-    <li>
-      <app-pricing-plan></app-pricing-plan>
-    </li>
-    <li class="cd-popular">
-      <app-pricing-plan></app-pricing-plan>
-    </li>
-    <li>
-      <app-pricing-plan></app-pricing-plan>
+    <li class="cd-popular" *ngFor="let pricingPlan of pricingPlans">
+      <app-pricing-plan [pricingPlan]="pricingPlan">
+      </app-pricing-plan>
     </li>
   </ul>
 

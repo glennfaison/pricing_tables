@@ -9,6 +9,8 @@ export class ProductComponent implements OnInit {
 
   @Input() product: any;
 
+  pricingPlans: any[] = [{}, {}, {}];
+
   constructor() { }
 
   ngOnInit() {
