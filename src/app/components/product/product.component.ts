@@ -9,7 +9,7 @@ export class ProductComponent implements OnInit {
 
   @Input() product: any;
 
-  pricingPlans: any[] = [{}, {}, {}];
+  pricingPlans: any[] = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
   constructor() { }
 

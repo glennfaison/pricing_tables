@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pricing';
-  products = [{ id: 1 }, { id: 2 }, { id: 3 }];
+  products: any[] = [{ id: 1 }, { id: 2 }, { id: 3 }];
 }
